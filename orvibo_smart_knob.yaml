@@ -44,8 +44,8 @@ action:
         sequence:
           - choose:
               - conditions:
-                  - "{{ command == 'rotate_left' }}"
+                  - "{{ command == 'left' }}"
                 sequence: !input "dimmer_rotate_left"
               - conditions:
-                  - "{{ command == 'rotate_right' }}"
+                  - "{{ command == 'right' }}"
                 sequence: !input "dimmer_rotate_right"
